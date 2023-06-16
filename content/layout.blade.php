@@ -8,46 +8,43 @@
     <link href="{{storage('/libs/bootstrap-5.2.3/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
         :root{
-            --bs-primary: #9c76a0;
-            --bs-primary-rgb: 156,118,160;
+            --bs-primary: #5C3523;
+            --bs-primary-rgb: 92,53,35;
+            --bs-secondary: #e5dbd0;
+            --bs-secondary-rgb: 229,219,208;
         }
         .btn-primary {
             --bs-btn-color: #fff;
-            --bs-btn-bg: #9c76a0;
-            --bs-btn-border-color: #9c76a0;
+            --bs-btn-bg: #5c3523;
+            --bs-btn-border-color: #5c3523;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
-            <a class="navbar-brand text-light" href="#">Bolos Vovó Dag</a>
-            <div style="z-index: 2000;">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
-                        <ul class="dropdown-menu dropdown-menu-light">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            
         </div>
     </nav>
-    <nav class="sticky-top navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container justify-content-center">
+            <a class="navbar-brand text-light" href="#">
+                <img src="{{storage('assets/home/logo.png')}}" alt="">
+            </a>
+        </div>
+    </nav>
+    <nav class="sticky-top navbar navbar-expand-lg bg-primary">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#bolos-cafe-section">Bolos para Café</a>
+                        <a class="nav-link text-secondary" aria-current="page" href="#bolos-cafe-section">Bolos para Café</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#bolos-gelados-section">Bolos Gelados</a>
+                        <a class="nav-link text-secondary" href="#bolos-gelados-section">Bolos Gelados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pudim-section">Pudim</a>
+                        <a class="nav-link text-secondary" href="#pudim-section">Pudim</a>
                     </li>
                 </ul>
             </div>
